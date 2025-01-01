@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>ALR QR</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff00dd, #083db1e1);
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+.cart {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    animation: bounce 2s infinite;
+}
+
+.cart-icon img {
+    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+    animation: rotate 3s linear infinite;
+}
+
+.message {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animaciones */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cart">
+            <div class="cart-icon">
+                <img src="img/images.png" alt="Carrito de compras">
+            </div>
+            <div class="message"><b>¡GRACIAS POR SU COMPRA!</b></div>
+            <div class="message"><b>SÍGUENOS EN INSTAGRAM:</b></div>
+            <div class="message"><a href="https://www.instagram.com/alr.mcbo/profilecard/?igsh=N3o3Z2V6ZWJxOHFn" target="_blank">@alr.mcbo</a></div>
+
+
+        </div>
+    </div>
+</body>
+</html>
